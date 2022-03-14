@@ -1,0 +1,1772 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             unaligned_NUP62.fasta
+# target HMM database:             /home/deng/src/hmmer3_data/Pfam31/Pfam-A.hmm
+# show alignments in output:       no
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Phy003I7ZJ_CHICK  [L=558]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    4.1e-40  136.2   5.6    9.8e-40  135.0   5.6    1.6  1  Nsp1_C    Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.023   15.0   1.6      0.023   15.0   1.6    2.4  2  DUF4164   Domain of unknown function (DUF4164)
+      0.062   12.1   2.3      0.093   11.5   2.3    1.2  1  Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+       0.13   11.6  14.2       0.21   10.9  14.2    1.3  1  GAS       Growth-arrest specific micro-tubule binding
+        7.4    7.1  13.1        0.4   11.2   2.8    2.8  3  DUF16     Protein of unknown function DUF16
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  135.0   5.6   2.7e-43   9.8e-40       7     116 .]     355     465 ..     349     465 .. 0.93
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.0   1.6   6.3e-06     0.023      28      68 ..     402     442 ..     395     458 .. 0.85
+   2 ?    1.2   2.1      0.13   4.5e+02       4      55 ..     437     487 ..     434     498 .. 0.43
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   2.3   2.6e-05     0.093     297     366 ..     411     483 ..     384     487 .. 0.82
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9  14.2   5.9e-05      0.21      23     164 ..     403     548 ..     383     554 .. 0.89
+
+>> DUF16  Protein of unknown function DUF16
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   2.8   0.00011       0.4      21      99 ..     365     443 ..     351     448 .. 0.85
+   2 ?    1.3   1.5      0.14   4.9e+02      54      92 ..     459     494 ..     435     522 .. 0.51
+   3 ?    0.6   0.2      0.22   7.9e+02      31      77 ..     502     548 ..     500     556 .. 0.79
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (558 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1245  (0.0694406); expected 358.6 (0.02)
+Passed bias filter:                      513  (0.0286129); expected 358.6 (0.02)
+Passed Vit filter:                        69  (0.00384851); expected 17.9 (0.001)
+Passed Fwd filter:                        18  (0.00100396); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 1.22u 0.62s 00:00:01.84 Elapsed: 00:00:03.18
+# Mc/sec: 533.08
+//
+Query:       Phy0054BO3_MELGA  [L=464]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    7.6e-40  135.3   6.9    7.6e-40  135.3   6.9    1.6  2  Nsp1_C          Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.017   15.4   1.5      0.017   15.4   1.5    2.5  2  DUF4164         Domain of unknown function (DUF4164)
+      0.051   12.4   2.5      0.078   11.8   2.5    1.3  1  Nup188_C        Nuclear pore protein NUP188 C-terminal domain
+       0.12   11.7  14.6        0.2   11.0  14.6    1.4  1  GAS             Growth-arrest specific micro-tubule binding
+        2.3    8.3   4.1        9.6    6.3   0.2    2.3  2  Cauli_DNA-bind  Caulimovirus DNA-binding protein
+        4.1    7.4  11.3       0.16   12.0   1.2    2.3  2  YscO-like       YscO-like protein
+        5.7    7.0  10.4        2.7    8.1   2.4    2.6  3  DUF1664         Protein of unknown function (DUF1664)
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  135.3   6.9     3e-43   7.6e-40       3     116 .]     260     371 ..     255     371 .. 0.93
+   2 ?   -3.7   0.1         4     1e+04      75      89 ..     381     395 ..     377     402 .. 0.50
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.4   1.5   6.7e-06     0.017      28      68 ..     308     348 ..     301     364 .. 0.85
+   2 ?    1.5   2.2      0.14   3.7e+02       4      56 ..     343     394 ..     340     405 .. 0.43
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   2.5     3e-05     0.078     297     366 ..     317     389 ..     289     393 .. 0.82
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0  14.6   7.7e-05       0.2      23     164 ..     309     454 ..     286     460 .. 0.89
+
+>> Cauli_DNA-bind  Caulimovirus DNA-binding protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.3   0.2    0.0038       9.6       3      41 ..     316     354 ..     314     359 .. 0.87
+   2 ?    3.0   0.4     0.039     1e+02       9      58 ..     380     428 ..     373     462 .. 0.57
+
+>> YscO-like  YscO-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   1.2   6.3e-05      0.16      81     146 ..     281     346 ..     265     348 .. 0.89
+   2 ?    0.0   3.1       0.3   7.6e+02      33     113 ..     370     454 ..     351     460 .. 0.53
+
+>> DUF1664  Protein of unknown function (DUF1664)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.1   2.4     0.001       2.7      48     122 ..     277     354 ..     269     358 .. 0.82
+   2 ?    3.2   0.3     0.034        86      67     104 ..     364     401 ..     343     405 .. 0.75
+   3 ?    2.5   0.6     0.053   1.4e+02      44     110 ..     380     448 ..     376     456 .. 0.72
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (464 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1505  (0.0839422); expected 358.6 (0.02)
+Passed bias filter:                      576  (0.0321267); expected 358.6 (0.02)
+Passed Vit filter:                        63  (0.00351386); expected 17.9 (0.001)
+Passed Fwd filter:                        17  (0.000948185); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 0.32u 0.14s 00:00:00.46 Elapsed: 00:00:00.27
+# Mc/sec: 5220.84
+//
+Query:       Phy00508FR_NIPNI  [L=549]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    2.8e-40  136.7   6.7      7e-40  135.5   6.7    1.6  1  Nsp1_C       Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.013   15.7   1.5      0.013   15.7   1.5    2.3  2  DUF4164      Domain of unknown function (DUF4164)
+      0.043   12.6   2.0      0.064   12.1   2.0    1.2  1  Nup188_C     Nuclear pore protein NUP188 C-terminal domain
+       0.52   10.3  11.4       0.35   10.9   1.5    2.1  2  YscO-like    YscO-like protein
+       0.65    9.5  13.7          2    7.9   9.2    2.1  2  Filament     Intermediate filament protein
+       0.74    9.1  14.4        1.8    7.8  14.4    1.6  1  GAS          Growth-arrest specific micro-tubule binding
+       0.74   10.4   3.4        1.2    9.7   1.0    2.4  2  Carbpep_Y_N  Carboxypeptidase Y pro-peptide
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  135.5   6.7   2.7e-43     7e-40       3     116 .]     345     456 ..     341     456 .. 0.95
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.7   1.5   5.2e-06     0.013      28      68 ..     393     433 ..     385     449 .. 0.83
+   2 ?    1.0   0.4       0.2   5.1e+02       4      46 ..     428     476 ..     423     488 .. 0.44
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   2.0   2.5e-05     0.064     297     366 ..     402     474 ..     376     478 .. 0.82
+
+>> YscO-like  YscO-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   1.5   0.00014      0.35      82     146 ..     367     431 ..     351     433 .. 0.89
+   2 ?    4.4   2.7     0.013        34      32     113 ..     454     539 ..     438     545 .. 0.70
+
+>> Filament  Intermediate filament protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.9   9.2   0.00079         2     177     283 ..     359     472 ..     356     486 .. 0.76
+   2 ?    3.8   0.1     0.014        36       6      52 ..     498     544 ..     495     548 .. 0.84
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.8  14.4   0.00071       1.8      23     164 ..     394     539 ..     374     545 .. 0.86
+
+>> Carbpep_Y_N  Carboxypeptidase Y pro-peptide
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   1.0   0.00045       1.2       7     120 ..     308     427 ..     304     429 .. 0.74
+   2 ?   -0.3   0.1      0.57   1.5e+03      24      80 ..     427     481 ..     423     488 .. 0.65
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (549 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1282  (0.0715043); expected 358.6 (0.02)
+Passed bias filter:                      494  (0.0275531); expected 358.6 (0.02)
+Passed Vit filter:                        73  (0.00407162); expected 17.9 (0.001)
+Passed Fwd filter:                        17  (0.000948185); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 0.35u 0.11s 00:00:00.46 Elapsed: 00:00:00.21
+# Mc/sec: 7942.18
+//
+Query:       Phy004O1E0_APTFO  [L=547]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+      3e-39  133.4   7.8      3e-39  133.4   7.8    1.7  2  Nsp1_C           Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.026   14.8   1.7      0.026   14.8   1.7    2.5  2  DUF4164          Domain of unknown function (DUF4164)
+      0.071   11.9   2.5       0.11   11.4   2.5    1.2  1  Nup188_C         Nuclear pore protein NUP188 C-terminal domai
+       0.19   11.0  14.4       0.37   10.1  14.4    1.5  1  GAS              Growth-arrest specific micro-tubule binding
+        2.4    8.6   7.6       0.72   10.3   0.5    2.4  2  TBCC_N           Tubulin-specific chaperone C N-terminal doma
+        4.1    7.4   9.4        4.1    7.4   1.2    2.3  2  Laminin_II       Laminin Domain II
+        8.3    6.5  11.4        4.7    7.3   2.7    2.7  3  DUF1664          Protein of unknown function (DUF1664)
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  133.4   7.8   1.2e-42     3e-39       2     116 .]     342     454 ..     340     454 .. 0.96
+   2 ?   -2.9   0.1       2.3   5.8e+03      74      94 ..     463     483 ..     458     485 .. 0.64
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.8   1.7     1e-05     0.026      28      68 ..     391     431 ..     384     446 .. 0.86
+   2 ?    1.1   2.9      0.19   4.9e+02       4      57 ..     426     478 ..     423     487 .. 0.42
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   2.5   4.1e-05      0.11     297     366 ..     400     472 ..     377     476 .. 0.82
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1  14.4   0.00015      0.37      22     164 ..     391     537 ..     372     543 .. 0.86
+
+>> TBCC_N  Tubulin-specific chaperone C N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.7   1.4      0.14   3.5e+02      27      80 ..     379     433 ..     363     437 .. 0.77
+   2 ?   10.3   0.5   0.00028      0.72       8      76 ..     442     511 ..     435     537 .. 0.80
+
+>> Laminin_II  Laminin Domain II
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.2   1.7     0.016        40      32      89 ..     382     436 ..     368     446 .. 0.74
+   2 ?    7.4   1.2    0.0016       4.1      12     100 ..     462     532 ..     446     540 .. 0.49
+
+>> DUF1664  Protein of unknown function (DUF1664)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.3   2.7    0.0018       4.7      49     122 ..     361     437 ..     353     439 .. 0.81
+   2 ?    4.1   0.9     0.018        45      50     104 ..     428     484 ..     423     487 .. 0.75
+   3 ?    2.8   0.8     0.045   1.2e+02      44     109 ..     463     530 ..     455     540 .. 0.62
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (547 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1307  (0.0728987); expected 358.6 (0.02)
+Passed bias filter:                      458  (0.0255452); expected 358.6 (0.02)
+Passed Vit filter:                        68  (0.00379274); expected 17.9 (0.001)
+Passed Fwd filter:                        23  (0.00128284); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 0.36u 0.10s 00:00:00.46 Elapsed: 00:00:00.20
+# Mc/sec: 8308.91
+//
+Query:       Phy004PA1B_ANAPL  [L=471]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    5.5e-40  135.8   6.9    1.4e-39  134.5   6.9    1.6  1  Nsp1_C           Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.018   15.3   1.6      0.018   15.3   1.6    2.5  2  DUF4164          Domain of unknown function (DUF4164)
+      0.051   12.4   2.5       0.08   11.8   2.5    1.3  1  Nup188_C         Nuclear pore protein NUP188 C-terminal domai
+       0.25   10.7  14.2       0.67    9.3  14.2    1.7  1  GAS              Growth-arrest specific micro-tubule binding
+        3.5    7.6  11.1       0.15   12.1   1.1    2.3  2  YscO-like        YscO-like protein
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  134.5   6.9     4e-43   1.4e-39       3     116 .]     267     378 ..     262     378 .. 0.95
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.3   1.6     5e-06     0.018      28      68 ..     315     355 ..     308     371 .. 0.85
+   2 ?    1.7   2.0     0.091   3.3e+02      11      56 ..     350     401 ..     345     410 .. 0.44
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   2.5   2.2e-05      0.08     297     366 ..     324     396 ..     296     400 .. 0.82
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3  14.2   0.00019      0.67      23     164 ..     316     461 ..     297     467 .. 0.87
+
+>> YscO-like  YscO-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   1.1   4.2e-05      0.15      81     146 ..     288     353 ..     271     355 .. 0.89
+   2 ?    0.0   3.1      0.21   7.6e+02      33     113 ..     377     461 ..     360     467 .. 0.54
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (471 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1618  (0.0902449); expected 358.6 (0.02)
+Passed bias filter:                      564  (0.0314574); expected 358.6 (0.02)
+Passed Vit filter:                        77  (0.00429472); expected 17.9 (0.001)
+Passed Fwd filter:                        17  (0.000948185); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.34u 0.09s 00:00:00.43 Elapsed: 00:00:00.20
+# Mc/sec: 7154.47
+//
+Query:       Phy004TLNA_APAVI  [L=469]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    7.5e-40  135.4   7.0    7.5e-40  135.4   7.0    1.8  2  Nsp1_C       Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.018   15.3   1.6      0.018   15.3   1.6    2.6  2  DUF4164      Domain of unknown function (DUF4164)
+      0.054   12.3   2.5      0.079   11.8   2.5    1.2  1  Nup188_C     Nuclear pore protein NUP188 C-terminal domain
+       0.14   11.5  13.9       0.29   10.5  13.9    1.5  1  GAS          Growth-arrest specific micro-tubule binding
+       0.87   10.0   6.1       0.53   10.7   0.4    2.4  2  TBCC_N       Tubulin-specific chaperone C N-terminal domain
+        1.6    8.8   9.1        3.4    7.7   1.1    2.4  2  Laminin_II   Laminin Domain II
+          4    7.5  11.0        2.9    7.9   2.5    2.7  3  DUF1664      Protein of unknown function (DUF1664)
+        4.2    7.4  12.0       0.16   12.0   1.2    2.4  2  YscO-like    YscO-like protein
+        7.6    5.0   7.8        7.1    5.1   4.6    1.8  2  FapA         Flagellar Assembly Protein A
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  135.4   7.0   3.8e-43   7.5e-40       3     116 .]     265     376 ..     260     376 .. 0.93
+   2 ?   -2.4   0.1         2     4e+03      74      94 ..     385     405 ..     379     408 .. 0.66
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.3   1.6   9.1e-06     0.018      28      68 ..     313     353 ..     306     369 .. 0.85
+   2 ?    2.0   2.7      0.13   2.6e+02       4      58 ..     348     401 ..     345     423 .. 0.49
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   2.5     4e-05     0.079     297     366 ..     322     394 ..     294     398 .. 0.82
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5  13.9   0.00014      0.29      23     164 ..     314     459 ..     295     462 .. 0.86
+
+>> TBCC_N  Tubulin-specific chaperone C N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.7   0.9      0.17   3.4e+02      40      80 ..     314     355 ..     288     361 .. 0.74
+   2 ?   10.7   0.4   0.00026      0.53       8      76 ..     364     433 ..     357     459 .. 0.80
+
+>> Laminin_II  Laminin Domain II
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.1   1.5     0.011        21      31      90 ..     303     359 ..     288     368 .. 0.81
+   2 ?    7.7   1.1    0.0017       3.4      12      98 ..     384     452 ..     368     460 .. 0.48
+
+>> DUF1664  Protein of unknown function (DUF1664)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.9   2.5    0.0015       2.9      49     122 ..     283     359 ..     275     364 .. 0.82
+   2 ?    4.6   0.3     0.016        32      67     104 ..     369     406 ..     348     412 .. 0.77
+   3 ?    2.9   0.7     0.055   1.1e+02      44     110 ..     385     453 ..     381     461 .. 0.62
+
+>> YscO-like  YscO-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   1.2   8.2e-05      0.16      81     146 ..     286     351 ..     270     353 .. 0.89
+   2 ?   -0.1   3.8      0.42   8.3e+02      32     113 ..     374     459 ..     357     463 .. 0.56
+
+>> FapA  Flagellar Assembly Protein A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.5   1.1     0.045        89     340     411 ..     278     364 ..     245     370 .. 0.53
+   2 ?    5.1   4.6    0.0036       7.1     318     411 ..     355     449 ..     328     467 .. 0.76
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (469 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1550  (0.0864521); expected 358.6 (0.02)
+Passed bias filter:                      550  (0.0306766); expected 358.6 (0.02)
+Passed Vit filter:                        85  (0.00474092); expected 17.9 (0.001)
+Passed Fwd filter:                        22  (0.00122706); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               9  [number of targets reported over threshold]
+# CPU time: 0.33u 0.10s 00:00:00.43 Elapsed: 00:00:00.20
+# Mc/sec: 7124.09
+//
+Query:       Phy004OLZM_COLLI  [L=489]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    4.1e-40  136.2   5.2    4.1e-40  136.2   5.2    1.7  2  Nsp1_C     Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.012   15.9   1.5      0.012   15.9   1.5    2.4  3  DUF4164    Domain of unknown function (DUF4164)
+      0.035   13.0   2.0      0.054   12.3   2.0    1.3  1  Nup188_C   Nuclear pore protein NUP188 C-terminal domain
+       0.29   10.4  13.9       0.77    9.1  13.9    1.6  1  GAS        Growth-arrest specific micro-tubule binding
+        3.2    7.8  13.2        1.1    9.3   3.2    2.2  2  YscO-like  YscO-like protein
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  136.2   5.2   1.1e-43   4.1e-40       6     116 .]     284     396 ..     279     396 .. 0.92
+   2 ?   -3.6   0.1       2.7   9.7e+03      75      90 ..     406     421 ..     402     427 .. 0.57
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.9   1.5   3.3e-06     0.012      28      68 ..     333     373 ..     325     389 .. 0.83
+   2 ?    1.0   0.6      0.15   5.2e+02       4      46 ..     368     416 ..     365     428 .. 0.44
+   3 ?   -2.6   0.0       1.9   6.9e+03      10      29 ..     459     478 ..     437     483 .. 0.62
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   2.0   1.5e-05     0.054     297     366 ..     342     414 ..     316     418 .. 0.82
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.1  13.9   0.00021      0.77      23     164 ..     334     479 ..     316     485 .. 0.87
+
+>> YscO-like  YscO-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3   3.2   0.00029       1.1      83     146 ..     308     371 ..     296     373 .. 0.89
+   2 ?    3.8   2.4     0.015        53      32     113 ..     394     479 ..     378     485 .. 0.73
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (489 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1646  (0.0918066); expected 358.6 (0.02)
+Passed bias filter:                      605  (0.0337442); expected 358.6 (0.02)
+Passed Vit filter:                        78  (0.00435049); expected 17.9 (0.001)
+Passed Fwd filter:                        12  (0.000669307); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.31u 0.10s 00:00:00.41 Elapsed: 00:00:00.20
+# Mc/sec: 7427.89
+//
+Query:       Phy004OQ34_STRCA  [L=470]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    8.3e-40  135.2   6.6      2e-39  134.0   6.6    1.6  1  Nsp1_C     Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.011   14.6   0.5      0.016   14.1   0.5    1.3  1  Nup188_C   Nuclear pore protein NUP188 C-terminal domain
+      0.018   15.3   1.6      0.018   15.3   1.6    2.5  2  DUF4164    Domain of unknown function (DUF4164)
+       0.25   10.7  14.2       0.67    9.3  14.2    1.7  1  GAS        Growth-arrest specific micro-tubule binding
+        4.1    7.4  11.3       0.19   11.8   1.4    2.3  2  YscO-like  YscO-like protein
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  134.0   6.6   5.7e-43     2e-39       7     116 .]     267     377 ..     260     377 .. 0.92
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.1   0.5   4.4e-06     0.016     296     366 ..     322     395 ..     237     399 .. 0.85
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.3   1.6     5e-06     0.018      28      68 ..     314     354 ..     307     370 .. 0.85
+   2 ?    1.7   2.0     0.091   3.3e+02      11      56 ..     349     400 ..     344     409 .. 0.44
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3  14.2   0.00019      0.67      23     164 ..     315     460 ..     296     466 .. 0.87
+
+>> YscO-like  YscO-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   1.4   5.2e-05      0.19      82     146 ..     288     352 ..     273     354 .. 0.89
+   2 ?    0.3   2.9      0.18   6.4e+02      33     113 ..     376     460 ..     359     466 .. 0.54
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (470 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1537  (0.085727); expected 358.6 (0.02)
+Passed bias filter:                      566  (0.031569); expected 358.6 (0.02)
+Passed Vit filter:                        76  (0.00423894); expected 17.9 (0.001)
+Passed Fwd filter:                        14  (0.000780858); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.28u 0.10s 00:00:00.38 Elapsed: 00:00:00.18
+# Mc/sec: 7932.53
+//
+Query:       Phy00527O5_PICPB  [L=456]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    2.4e-39  133.7   6.1    2.4e-39  133.7   6.1    1.8  2  Nsp1_C       Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.016   15.4   1.5      0.016   15.4   1.5    2.6  2  DUF4164      Domain of unknown function (DUF4164)
+       0.04   12.8   2.5      0.059   12.2   2.5    1.2  1  Nup188_C     Nuclear pore protein NUP188 C-terminal domain
+      0.089   12.1  15.1       0.18   11.2  15.1    1.5  1  GAS          Growth-arrest specific micro-tubule binding
+        0.4   10.7  10.3      0.085   12.9   0.5    2.3  2  YscO-like    YscO-like protein
+        1.4    9.3   7.5       0.41   11.1   0.4    2.5  2  TBCC_N       Tubulin-specific chaperone C N-terminal domain
+        1.5    8.8   9.7        2.6    8.0   1.3    2.4  2  Laminin_II   Laminin Domain II
+        3.5    7.7  11.7        2.3    8.2   2.1    2.8  3  DUF1664      Protein of unknown function (DUF1664)
+        6.1    5.3   8.1        2.4    6.7   3.1    1.8  2  FapA         Flagellar Assembly Protein A
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  133.7   6.1   1.2e-42   2.4e-39       3     116 .]     252     363 ..     247     363 .. 0.94
+   2 ?   -2.2   0.1       1.7   3.4e+03      73      94 ..     371     392 ..     365     395 .. 0.66
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.4   1.5   8.3e-06     0.016      28      68 ..     300     340 ..     293     356 .. 0.85
+   2 ?    2.3   2.2       0.1   2.1e+02       4      59 ..     335     389 ..     332     410 .. 0.52
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   2.5     3e-05     0.059     297     366 ..     309     381 ..     282     385 .. 0.82
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2  15.1   8.9e-05      0.18      23     164 ..     301     446 ..     281     452 .. 0.87
+
+>> YscO-like  YscO-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.5   4.2e-05     0.085      79     146 ..     271     338 ..     253     340 .. 0.88
+   2 ?    1.4   3.5      0.14   2.9e+02      32     113 ..     361     446 ..     357     452 .. 0.67
+
+>> TBCC_N  Tubulin-specific chaperone C N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.7   1.0      0.17   3.5e+02      39      80 ..     300     342 ..     272     348 .. 0.74
+   2 ?   11.1   0.4    0.0002      0.41       8      76 ..     351     420 ..     344     431 .. 0.77
+
+>> Laminin_II  Laminin Domain II
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.0   1.6     0.011        22      31      90 ..     290     346 ..     275     355 .. 0.81
+   2 ?    8.0   1.3    0.0013       2.6      15     100 ..     367     441 ..     355     449 .. 0.50
+
+>> DUF1664  Protein of unknown function (DUF1664)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.2   2.1    0.0012       2.3      48     122 ..     269     346 ..     262     348 .. 0.81
+   2 ?    5.2   0.8     0.011        21      54     104 ..     341     393 ..     334     397 .. 0.75
+   3 ?    2.9   0.8     0.051     1e+02      44     110 ..     372     440 ..     368     449 .. 0.62
+
+>> FapA  Flagellar Assembly Protein A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.7   1.0     0.039        78     340     411 ..     265     351 ..     233     357 .. 0.53
+   2 ?    6.7   3.1    0.0012       2.4     318     411 ..     342     436 ..     330     449 .. 0.86
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (456 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1527  (0.0851693); expected 358.6 (0.02)
+Passed bias filter:                      520  (0.0290033); expected 358.6 (0.02)
+Passed Vit filter:                        77  (0.00429472); expected 17.9 (0.001)
+Passed Fwd filter:                        20  (0.00111551); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               9  [number of targets reported over threshold]
+# CPU time: 0.33u 0.12s 00:00:00.45 Elapsed: 00:00:00.20
+# Mc/sec: 6926.62
+//
+Query:       Phy004STVX_187382  [L=475]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.4e-39  134.5   6.7    1.4e-39  134.5   6.7    1.8  2  Nsp1_C       Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.018   15.3   1.6      0.018   15.3   1.6    2.6  2  DUF4164      Domain of unknown function (DUF4164)
+      0.055   12.3   2.5      0.081   11.8   2.5    1.2  1  Nup188_C     Nuclear pore protein NUP188 C-terminal domain
+       0.16   11.3  14.4        0.3   10.4  14.1    1.5  1  GAS          Growth-arrest specific micro-tubule binding
+        1.5    8.8   9.1        3.2    7.8   1.1    2.4  2  Laminin_II   Laminin Domain II
+        4.2    7.4  11.1          3    7.9   2.5    2.8  3  DUF1664      Protein of unknown function (DUF1664)
+        4.2    7.4  12.2       0.17   11.9   1.2    2.4  2  YscO-like    YscO-like protein
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  134.5   6.7   5.3e-43   1.4e-39       3     116 .]     271     382 ..     267     382 .. 0.95
+   2 ?   -2.5   0.1       1.7   4.4e+03      74      94 ..     391     411 ..     386     414 .. 0.65
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.3   1.6   7.1e-06     0.018      28      68 ..     319     359 ..     312     375 .. 0.85
+   2 ?    1.9   2.8      0.11   2.8e+02       4      58 ..     354     407 ..     351     431 .. 0.50
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   2.5   3.1e-05     0.081     297     366 ..     328     400 ..     300     404 .. 0.82
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4  14.1   0.00012       0.3      23     164 ..     320     465 ..     311     471 .. 0.86
+
+>> Laminin_II  Laminin Domain II
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.1   1.6    0.0086        22      31      90 ..     309     365 ..     294     377 .. 0.81
+   2 ?    7.8   1.1    0.0012       3.2      12     100 ..     390     460 ..     374     468 .. 0.49
+
+>> DUF1664  Protein of unknown function (DUF1664)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.9   2.5    0.0012         3      49     122 ..     289     365 ..     281     370 .. 0.82
+   2 ?    4.5   0.8     0.013        33      50     104 ..     356     412 ..     351     416 .. 0.75
+   3 ?    2.5   1.1     0.056   1.4e+02      44     110 ..     391     459 ..     388     468 .. 0.61
+
+>> YscO-like  YscO-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   1.2   6.5e-05      0.17      81     146 ..     292     357 ..     276     359 .. 0.89
+   2 ?   -0.0   4.0      0.31     8e+02      32     113 ..     380     465 ..     364     471 .. 0.60
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (475 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1634  (0.0911373); expected 358.6 (0.02)
+Passed bias filter:                      545  (0.0303977); expected 358.6 (0.02)
+Passed Vit filter:                        77  (0.00429472); expected 17.9 (0.001)
+Passed Fwd filter:                        22  (0.00122706); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 0.35u 0.08s 00:00:00.43 Elapsed: 00:00:00.19
+# Mc/sec: 7594.98
+//
+Query:       Phy004UIZ8_CALAN  [L=466]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    4.1e-39  133.0   8.3    4.1e-39  133.0   8.3    1.8  2  Nsp1_C       Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.016   15.4   1.4      0.016   15.4   1.4    2.6  2  DUF4164      Domain of unknown function (DUF4164)
+      0.056   12.3   2.5      0.083   11.7   2.5    1.2  1  Nup188_C     Nuclear pore protein NUP188 C-terminal domain
+       0.17   11.2  14.7       0.33   10.3  14.7    1.5  1  GAS          Growth-arrest specific micro-tubule binding
+        1.9    9.0   8.0       0.63   10.5   0.7    2.4  2  TBCC_N       Tubulin-specific chaperone C N-terminal domain
+        3.1    7.8   9.7        3.4    7.7   1.2    2.3  2  Laminin_II   Laminin Domain II
+        3.4    6.2   7.4        2.8    6.5   2.6    1.9  2  FapA         Flagellar Assembly Protein A
+        5.1    7.7  15.3       0.33   11.5   4.5    2.8  2  DUF16        Protein of unknown function DUF16
+        5.2    7.1  12.2       0.19   11.8   1.0    2.4  2  YscO-like    YscO-like protein
+        6.3    6.9  11.8        4.1    7.5   3.0    2.8  3  DUF1664      Protein of unknown function (DUF1664)
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  133.0   8.3   2.3e-42   4.1e-39       3     116 .]     262     373 ..     256     373 .. 0.93
+   2 ?   -2.4   0.1       2.2     4e+03      74      94 ..     382     402 ..     376     405 .. 0.66
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.4   1.4   9.2e-06     0.016      28      68 ..     310     350 ..     303     366 .. 0.86
+   2 ?    1.8   2.6      0.17     3e+02       4      57 ..     345     397 ..     342     410 .. 0.45
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   2.5   4.6e-05     0.083     297     366 ..     319     391 ..     296     395 .. 0.82
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3  14.7   0.00019      0.33      22     164 ..     310     456 ..     288     462 .. 0.86
+
+>> TBCC_N  Tubulin-specific chaperone C N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.0   1.3      0.15   2.8e+02      27      80 ..     298     352 ..     283     356 .. 0.77
+   2 ?   10.5   0.7   0.00035      0.63       8      76 ..     361     430 ..     354     456 .. 0.80
+
+>> Laminin_II  Laminin Domain II
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.4   1.8     0.019        34      32      90 ..     301     356 ..     286     365 .. 0.74
+   2 ?    7.7   1.2    0.0019       3.4      12     100 ..     381     451 ..     365     459 .. 0.49
+
+>> FapA  Flagellar Assembly Protein A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.5   0.9     0.025        45     317     409 ..     253     359 ..     234     366 .. 0.50
+   2 ?    6.5   2.6    0.0015       2.8     318     411 ..     352     446 ..     340     459 .. 0.85
+
+>> DUF16  Protein of unknown function DUF16
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   4.5   0.00018      0.33      24      99 ..     276     351 ..     267     356 .. 0.85
+   2 ?   -1.4   5.5       1.9   3.4e+03      77      77 ..     401     401 ..     343     464 .. 0.50
+
+>> YscO-like  YscO-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   1.0    0.0001      0.19      78     146 ..     280     348 ..     263     350 .. 0.87
+   2 ?   -0.2   4.3      0.52   9.3e+02      32     113 ..     371     456 ..     354     462 .. 0.60
+
+>> DUF1664  Protein of unknown function (DUF1664)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.5   3.0    0.0023       4.1      48     122 ..     279     356 ..     272     361 .. 0.81
+   2 ?    4.6   0.8     0.018        33      50     104 ..     347     403 ..     342     407 .. 0.75
+   3 ?    2.9   0.8      0.06   1.1e+02      44     110 ..     382     450 ..     378     459 .. 0.62
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (466 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1580  (0.0881254); expected 358.6 (0.02)
+Passed bias filter:                      534  (0.0297841); expected 358.6 (0.02)
+Passed Vit filter:                        75  (0.00418317); expected 17.9 (0.001)
+Passed Fwd filter:                        22  (0.00122706); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):              10  [number of targets reported over threshold]
+# CPU time: 0.30u 0.10s 00:00:00.40 Elapsed: 00:00:00.18
+# Mc/sec: 7865.02
+//
+Query:       Phy004SNJQ_CHAVO  [L=485]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    8.7e-38  128.7   9.7    8.7e-38  128.7   9.7    1.7  2  Nsp1_C       Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.022   15.0   1.7      0.022   15.0   1.7    2.6  2  DUF4164      Domain of unknown function (DUF4164)
+      0.039   12.8   1.9      0.058   12.2   1.9    1.2  1  Nup188_C     Nuclear pore protein NUP188 C-terminal domain
+       0.17   11.2  14.6       0.34   10.2  14.6    1.5  1  GAS          Growth-arrest specific micro-tubule binding
+        1.4    9.4  14.8      0.088   13.3   4.2    2.8  3  DUF16        Protein of unknown function DUF16
+        1.6    9.2   7.6       0.57   10.7   0.3    2.5  2  TBCC_N       Tubulin-specific chaperone C N-terminal domain
+          3    7.9   9.6        3.4    7.7   1.1    2.4  2  Laminin_II   Laminin Domain II
+        3.7    7.6  11.6        2.2    8.4   2.7    2.7  3  DUF1664      Protein of unknown function (DUF1664)
+        8.8    4.8   9.1        2.1    6.9   2.2    2.0  2  FapA         Flagellar Assembly Protein A
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  128.7   9.7   4.4e-41   8.7e-38       5     116 .]     282     392 ..     276     392 .. 0.92
+   2 ?   -2.6   0.1       2.3   4.6e+03      74      94 ..     401     421 ..     396     424 .. 0.65
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.0   1.7   1.1e-05     0.022      28      68 ..     329     369 ..     322     384 .. 0.86
+   2 ?    1.7   2.7      0.16   3.1e+02       4      57 ..     364     416 ..     361     435 .. 0.48
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   1.9   2.9e-05     0.058     297     366 ..     338     410 ..     313     414 .. 0.82
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2  14.6   0.00017      0.34      22     164 ..     329     475 ..     306     481 .. 0.86
+
+>> DUF16  Protein of unknown function DUF16
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   4.2   4.4e-05     0.088      16      99 ..     287     370 ..     279     375 .. 0.86
+   2 ?    2.2   1.4      0.13   2.6e+02      55      97 ..     387     419 ..     361     453 .. 0.44
+   3 ?    1.0   0.6      0.31   6.1e+02      31      77 ..     429     475 ..     411     482 .. 0.73
+
+>> TBCC_N  Tubulin-specific chaperone C N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.8   1.5      0.16   3.2e+02      27      80 ..     317     371 ..     300     376 .. 0.77
+   2 ?   10.7   0.3   0.00028      0.57       8      76 ..     380     449 ..     372     460 .. 0.77
+
+>> Laminin_II  Laminin Domain II
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.1   1.8     0.021        42      32      89 ..     320     374 ..     305     380 .. 0.75
+   2 ?    7.7   1.1    0.0017       3.4      12     100 ..     400     470 ..     384     478 .. 0.49
+
+>> DUF1664  Protein of unknown function (DUF1664)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.4   2.7    0.0011       2.2      45     122 ..     295     375 ..     260     377 .. 0.82
+   2 ?    4.4   1.0     0.019        37      67     104 ..     385     422 ..     363     449 .. 0.79
+   3 ?    2.9   0.9     0.053   1.1e+02      44     110 ..     401     469 ..     393     478 .. 0.62
+
+>> FapA  Flagellar Assembly Protein A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.1   2.0     0.028        57     319     410 ..     277     379 ..     258     386 .. 0.50
+   2 ?    6.9   2.2     0.001       2.1     318     411 ..     371     465 ..     358     480 .. 0.85
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (485 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1624  (0.0905795); expected 358.6 (0.02)
+Passed bias filter:                      536  (0.0298957); expected 358.6 (0.02)
+Passed Vit filter:                        75  (0.00418317); expected 17.9 (0.001)
+Passed Fwd filter:                        23  (0.00128284); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               9  [number of targets reported over threshold]
+# CPU time: 0.30u 0.11s 00:00:00.41 Elapsed: 00:00:00.19
+# Mc/sec: 7754.87
+//
+Query:       Phy0050IUO_OPIHO  [L=457]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    3.2e-39  133.3   7.9    3.2e-39  133.3   7.9    1.6  2  Nsp1_C     Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.016   15.4   1.4      0.016   15.4   1.4    2.4  3  DUF4164    Domain of unknown function (DUF4164)
+      0.031   13.1   1.9      0.046   12.5   1.9    1.2  1  Nup188_C   Nuclear pore protein NUP188 C-terminal domain
+       0.28   11.2  10.2       0.24   11.4   1.1    2.2  2  YscO-like  YscO-like protein
+       0.34   10.3  14.1       0.89    8.9  14.1    1.7  1  GAS        Growth-arrest specific micro-tubule binding
+        6.8    7.2  15.4       0.35   11.4   4.6    2.8  2  DUF16      Protein of unknown function DUF16
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  133.3   7.9   1.1e-42   3.2e-39       3     116 .]     253     364 ..     249     364 .. 0.94
+   2 ?   -3.4   0.1       2.8   8.2e+03      74      90 ..     373     389 ..     369     395 .. 0.58
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.4   1.4   5.4e-06     0.016      28      68 ..     301     341 ..     294     358 .. 0.86
+   2 ?    1.0   0.7      0.18   5.2e+02       4      46 ..     336     384 ..     333     396 .. 0.44
+   3 ?   -2.8   0.0       2.7   8.1e+03      12      22 ..     429     439 ..     404     450 .. 0.56
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   1.9   1.5e-05     0.046     297     366 ..     310     382 ..     286     386 .. 0.82
+
+>> YscO-like  YscO-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   1.1   8.1e-05      0.24      80     146 ..     273     339 ..     256     341 .. 0.89
+   2 ?    4.5   2.3     0.011        33      32     121 ..     362     448 ..     346     453 .. 0.66
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.9  14.1    0.0003      0.89      22     164 ..     301     447 ..     282     453 .. 0.86
+
+>> DUF16  Protein of unknown function DUF16
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   4.6   0.00012      0.35      24      99 ..     267     342 ..     259     347 .. 0.85
+   2 ?   -1.5   5.4       1.2   3.6e+03      66      90 ..     370     391 ..     333     455 .. 0.52
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (457 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1411  (0.0786993); expected 358.6 (0.02)
+Passed bias filter:                      543  (0.0302861); expected 358.6 (0.02)
+Passed Vit filter:                        76  (0.00423894); expected 17.9 (0.001)
+Passed Fwd filter:                        14  (0.000780858); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.30u 0.07s 00:00:00.37 Elapsed: 00:00:00.18
+# Mc/sec: 7713.12
+//
+Query:       Phy004OLZN_COLLI  [L=332]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+      2e-40  137.2   5.2      2e-40  137.2   5.2    1.9  2  Nsp1_C           Nsp1-like C-terminal region
+     0.0066   16.7   1.5     0.0066   16.7   1.5    2.7  3  DUF4164          Domain of unknown function (DUF4164)
+  ------ inclusion threshold ------
+      0.031   13.1   2.6      0.047   12.5   2.6    1.3  1  Nup188_C         Nuclear pore protein NUP188 C-terminal domai
+      0.088   12.2  14.7       0.19   11.0  14.7    1.6  1  GAS              Growth-arrest specific micro-tubule binding
+       0.99    9.9   7.5       0.33   11.4   0.4    2.6  2  TBCC_N           Tubulin-specific chaperone C N-terminal doma
+        1.4    8.9   9.2        1.8    8.5   1.2    2.4  2  Laminin_II       Laminin Domain II
+        2.1    6.8  48.6        4.6    5.7  42.5    2.1  2  Nucleoporin_FG2  Nucleoporin FG repeated region
+        4.3    7.5   6.3        7.6    6.6   0.5    2.7  3  Cob_adeno_trans  Cobalamin adenosyltransferase
+        5.1    7.1  12.0        4.9    7.2   2.7    2.8  3  DUF1664          Protein of unknown function (DUF1664)
+        5.6    7.5  14.7        0.6   10.6   3.6    2.9  3  DUF16            Protein of unknown function DUF16
+        8.1    6.1   7.1        8.6    6.0   0.2    2.7  2  DUF745           Protein of unknown function (DUF745)
+        8.1    4.9   8.2         11    4.4   7.2    1.7  2  FapA             Flagellar Assembly Protein A
+        8.2    7.0  10.1      3e+02    2.0   6.0    3.3  2  NPV_P10          Nucleopolyhedrovirus P10 protein
+        9.8    6.5  10.3         71    3.7   1.2    3.4  3  XhlA             Haemolysin XhlA
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  137.2   5.2   1.5e-43     2e-40       6     116 .]     127     239 ..     122     239 .. 0.92
+   2 ?   -1.8   0.1       2.1   2.7e+03      74      94 ..     248     268 ..     242     271 .. 0.66
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.7   1.5   5.1e-06    0.0066      28      68 ..     176     216 ..     168     232 .. 0.83
+   2 ?    2.5   2.9      0.14   1.8e+02       4      59 ..     211     265 ..     208     290 .. 0.51
+   3 ?   -1.8   0.0       3.1     4e+03      12      22 ..     304     314 ..     276     326 .. 0.55
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   2.6   3.7e-05     0.047     296     366 ..     184     257 ..     157     261 .. 0.81
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0  14.7   0.00015      0.19      23     164 ..     177     322 ..     157     328 .. 0.86
+
+>> TBCC_N  Tubulin-specific chaperone C N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.9   0.8      0.22   2.9e+02      44      80 ..     184     218 ..     151     223 .. 0.76
+   2 ?   11.4   0.4   0.00026      0.33       8      76 ..     227     296 ..     220     307 .. 0.77
+
+>> Laminin_II  Laminin Domain II
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.6   1.5     0.024        31      33      90 ..     168     222 ..     152     234 .. 0.76
+   2 ?    8.5   1.2    0.0014       1.8      12     100 ..     247     317 ..     230     325 .. 0.50
+
+>> Nucleoporin_FG2  Nucleoporin FG repeated region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.7  42.5    0.0036       4.6      26     170 ..       5     146 ..       1     166 [. 0.73
+   2 ?    5.0   0.4    0.0055       7.1     345     414 ..     244     308 ..     216     326 .. 0.80
+
+>> Cob_adeno_trans  Cobalamin adenosyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.8   0.0      0.19   2.4e+02      87     118 ..     139     170 ..     110     175 .. 0.74
+   2 ?    1.4   0.9      0.25   3.2e+02      57     111 ..     168     219 ..     141     230 .. 0.54
+   3 ?    6.6   0.5    0.0059       7.6      49      95 ..     241     302 ..     224     325 .. 0.61
+
+>> DUF1664  Protein of unknown function (DUF1664)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.2   2.7    0.0038       4.9      48     122 ..     145     222 ..     138     227 .. 0.81
+   2 ?    5.2   0.7     0.016        21      54     104 ..     217     269 ..     210     273 .. 0.74
+   3 ?    3.4   1.0     0.056        72      44     110 ..     248     316 ..     244     325 .. 0.62
+
+>> DUF16  Protein of unknown function DUF16
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   3.6   0.00047       0.6      24      99 ..     142     217 ..     131     222 .. 0.85
+   2 ?    2.3   1.9      0.18   2.3e+02      55      97 ..     234     266 ..     209     300 .. 0.43
+   3 ?    1.8   0.6      0.26   3.4e+02      31      77 ..     276     322 ..     258     330 .. 0.73
+
+>> DUF745  Protein of unknown function (DUF745)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.0   0.2    0.0067       8.6      87     165 ..     121     199 ..     112     203 .. 0.88
+   2 ?    1.9   1.9      0.12   1.6e+02      86     124 ..     234     272 ..     208     326 .. 0.53
+
+>> FapA  Flagellar Assembly Protein A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.5   1.8      0.14   1.8e+02     354     411 ..     169     227 ..     132     234 .. 0.58
+   2 ?    4.4   7.2    0.0089        11     306     411 ..     206     312 ..     158     326 .. 0.68
+
+>> NPV_P10  Nucleopolyhedrovirus P10 protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.0   6.0      0.24     3e+02      14      25 ..     211     222 ..     175     292 .. 0.50
+   2 ?    0.9   0.2       0.5   6.4e+02      11      32 ..     293     314 ..     281     320 .. 0.61
+
+>> XhlA  Haemolysin XhlA
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.3   1.4     0.072        93       4      49 ..     180     225 ..     176     232 .. 0.61
+   2 ?    3.7   1.2     0.055        71      27      46 ..     247     266 ..     212     271 .. 0.65
+   3 ?    3.4   0.0     0.071        91       6      38 ..     281     313 ..     278     315 .. 0.87
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (332 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1992  (0.111105); expected 358.6 (0.02)
+Passed bias filter:                      755  (0.0421105); expected 358.6 (0.02)
+Passed Vit filter:                        82  (0.0045736); expected 17.9 (0.001)
+Passed Fwd filter:                        22  (0.00122706); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):              14  [number of targets reported over threshold]
+# CPU time: 0.31u 0.15s 00:00:00.46 Elapsed: 00:00:00.26
+# Mc/sec: 3879.28
+//
+Query:       Phy004W8WI_FALPE  [L=462]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+      4e-39  133.0   7.8      4e-39  133.0   7.8    1.8  2  Nsp1_C           Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.025   14.9   1.7      0.025   14.9   1.7    2.6  2  DUF4164          Domain of unknown function (DUF4164)
+      0.044   12.6   2.1      0.066   12.0   2.1    1.2  1  Nup188_C         Nuclear pore protein NUP188 C-terminal domai
+       0.21   10.9  15.2       0.41   10.0  15.2    1.5  1  GAS              Growth-arrest specific micro-tubule binding
+        1.7    9.1   8.1       0.46   11.0   0.4    2.4  2  TBCC_N           Tubulin-specific chaperone C N-terminal doma
+          3    7.9   9.7        3.8    7.5   1.4    2.4  2  Laminin_II       Laminin Domain II
+        5.6    7.0  11.7          4    7.5   3.0    2.8  3  DUF1664          Protein of unknown function (DUF1664)
+        6.2    6.9   6.4         13    5.8   0.4    2.6  2  Cob_adeno_trans  Cobalamin adenosyltransferase
+        6.7    7.3  15.2       0.39   11.2   4.6    2.7  2  DUF16            Protein of unknown function DUF16
+        9.2    6.3  12.8        0.3   11.1   1.3    2.4  2  YscO-like        YscO-like protein
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  133.0   7.8   2.2e-42     4e-39       3     116 .]     258     369 ..     254     369 .. 0.94
+   2 ?   -2.4   0.1       2.2     4e+03      74      94 ..     378     398 ..     372     401 .. 0.66
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.9   1.7   1.4e-05     0.025      28      68 ..     306     346 ..     299     361 .. 0.89
+   2 ?    1.6   2.9      0.19   3.5e+02      11      57 ..     341     393 ..     338     403 .. 0.46
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   2.1   3.7e-05     0.066     297     366 ..     315     387 ..     291     391 .. 0.81
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0  15.2   0.00023      0.41      22     164 ..     306     452 ..     287     458 .. 0.84
+
+>> TBCC_N  Tubulin-specific chaperone C N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.0   1.4      0.15   2.7e+02      27      80 ..     294     348 ..     278     353 .. 0.77
+   2 ?   11.0   0.4   0.00025      0.46       7      76 ..     356     426 ..     350     437 .. 0.78
+
+>> Laminin_II  Laminin Domain II
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.6   1.5     0.017        30      32      89 ..     297     351 ..     280     358 .. 0.75
+   2 ?    7.5   1.4    0.0021       3.8      12     100 ..     377     447 ..     361     455 .. 0.49
+
+>> DUF1664  Protein of unknown function (DUF1664)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.5   3.0    0.0022         4      48     122 ..     275     352 ..     268     357 .. 0.81
+   2 ?    4.6   0.6     0.017        31      67     104 ..     362     399 ..     340     403 .. 0.76
+   3 ?    2.5   1.1      0.08   1.4e+02      44     110 ..     378     446 ..     375     455 .. 0.61
+
+>> Cob_adeno_trans  Cobalamin adenosyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.1   1.1     0.052        93      51      97 ..     271     321 ..     225     358 .. 0.40
+   2 ?    5.8   0.4    0.0075        13      49      94 ..     371     431 ..     354     454 .. 0.61
+
+>> DUF16  Protein of unknown function DUF16
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   4.6   0.00022      0.39      27      99 ..     275     347 ..     267     352 .. 0.85
+   2 ?   -1.5   5.3         2   3.7e+03      79      79 ..     399     399 ..     339     460 .. 0.50
+
+>> YscO-like  YscO-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   1.3   0.00016       0.3      81     146 ..     279     344 ..     262     346 .. 0.89
+   2 ?   -0.1   4.3      0.48   8.7e+02      32     113 ..     367     452 ..     350     458 .. 0.58
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (462 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1544  (0.0861175); expected 358.6 (0.02)
+Passed bias filter:                      539  (0.030063); expected 358.6 (0.02)
+Passed Vit filter:                        68  (0.00379274); expected 17.9 (0.001)
+Passed Fwd filter:                        22  (0.00122706); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):              10  [number of targets reported over threshold]
+# CPU time: 0.34u 0.09s 00:00:00.43 Elapsed: 00:00:00.20
+# Mc/sec: 7017.76
+//
+Query:       Phy004W8WJ_FALPE  [L=332]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    4.8e-40  136.0   7.6    4.8e-40  136.0   7.6    1.7  2  Nsp1_C           Nsp1-like C-terminal region
+     0.0093   16.2   1.6     0.0093   16.2   1.6    2.7  3  DUF4164          Domain of unknown function (DUF4164)
+  ------ inclusion threshold ------
+      0.024   13.5   2.2      0.037   12.9   2.2    1.3  1  Nup188_C         Nuclear pore protein NUP188 C-terminal domai
+       0.31   10.4  15.1       0.94    8.8  14.9    1.8  1  GAS              Growth-arrest specific micro-tubule binding
+        1.4    7.8   8.8      0.038   12.9   1.2    1.9  3  DUF726           Protein of unknown function (DUF726)
+        2.4    8.7  15.9       0.26   11.8   4.5    2.9  3  DUF16            Protein of unknown function DUF16
+        3.9    8.0   6.5        2.9    8.5   2.6    2.6  2  Carbpep_Y_N      Carboxypeptidase Y pro-peptide
+        4.4    5.7  42.2        1.9    6.9  36.3    2.0  2  Nucleoporin_FG2  Nucleoporin FG repeated region
+        6.3    6.9   6.3        1.8    8.7   0.1    2.5  3  PUMA             Bcl-2-binding component 3, p53 upregulated m
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  136.0   7.6   2.4e-43   4.8e-40       3     116 .]     128     239 ..     124     239 .. 0.94
+   2 ?   -3.2   0.1       3.5     7e+03      75      88 ..     249     262 ..     244     270 .. 0.50
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.2   1.6   4.7e-06    0.0093      28      68 ..     176     216 ..     169     231 .. 0.85
+   2 ?    2.4   2.4     0.095   1.9e+02      11      58 ..     211     264 ..     206     271 .. 0.50
+   3 ?   -1.9   0.0       2.1   4.2e+03      12      24 ..     304     316 ..     277     326 .. 0.56
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   2.2   1.9e-05     0.037     297     366 ..     185     257 ..     159     261 .. 0.82
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.8  14.9   0.00047      0.94      23     164 ..     177     322 ..     158     328 .. 0.86
+
+>> DUF726  Protein of unknown function (DUF726)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   2.2      0.55   1.1e+03      11      42 ..      29      61 ..       8      67 .. 0.54
+   2 ?   -1.7   2.8      0.52     1e+03      11      47 ..      29      66 ..      22      79 .. 0.68
+   3 ?   12.9   1.2   1.9e-05     0.038       8     153 ..      64     219 ..      60     235 .. 0.76
+
+>> DUF16  Protein of unknown function DUF16
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   4.5   0.00013      0.26      26      99 ..     144     217 ..     137     222 .. 0.85
+   2 ?    1.9   1.8      0.15   3.1e+02      54      88 ..     233     264 ..     208     296 .. 0.45
+   3 ?    2.4   0.3      0.11   2.1e+02      31      77 ..     276     322 ..     274     330 .. 0.82
+
+>> Carbpep_Y_N  Carboxypeptidase Y pro-peptide
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.5   2.6    0.0014       2.9      52     120 ..     140     210 ..      87     213 .. 0.75
+   2 ?    0.3   0.1      0.49   9.8e+02      24      80 ..     210     264 ..     206     271 .. 0.67
+
+>> Nucleoporin_FG2  Nucleoporin FG repeated region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.9  36.3   0.00097       1.9      26     165 ..       5     141 ..       1     176 [. 0.66
+   2 ?    2.4   0.3     0.022        45     345     414 ..     244     308 ..     217     326 .. 0.79
+
+>> PUMA  Bcl-2-binding component 3, p53 upregulated modulator of apoptosis
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.4   0.2       4.5     9e+03      51      63 ..      36      48 ..      11      71 .. 0.54
+   2 ?    8.7   0.1    0.0009       1.8     116     149 ..     234     267 ..     214     273 .. 0.78
+   3 ?    1.1   0.2       0.2     4e+02     126     157 ..     295     325 ..     270     330 .. 0.77
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (332 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1924  (0.107312); expected 358.6 (0.02)
+Passed bias filter:                      765  (0.0426683); expected 358.6 (0.02)
+Passed Vit filter:                        75  (0.00418317); expected 17.9 (0.001)
+Passed Fwd filter:                        15  (0.000836633); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               9  [number of targets reported over threshold]
+# CPU time: 0.31u 0.10s 00:00:00.41 Elapsed: 00:00:00.21
+# Mc/sec: 4802.92
+//
+Query:       Phy004U0LB_BUCRH  [L=331]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    7.5e-40  135.3   6.5    7.5e-40  135.3   6.5    1.9  2  Nsp1_C           Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.014   14.2   2.3      0.021   13.7   2.3    1.3  1  Nup188_C         Nuclear pore protein NUP188 C-terminal domai
+      0.019   15.2   1.4      0.019   15.2   1.4    2.7  3  DUF4164          Domain of unknown function (DUF4164)
+      0.075   12.4  13.8       0.16   11.3  13.7    1.6  1  GAS              Growth-arrest specific micro-tubule binding
+        0.6   10.6   6.6       0.32   11.5   0.4    2.6  2  TBCC_N           Tubulin-specific chaperone C N-terminal doma
+        1.2    9.4   8.3         28    5.0   0.6    3.4  3  XhlA             Haemolysin XhlA
+        1.6    8.5   7.9        1.3    8.9   0.7    2.6  2  SKA2             Spindle and kinetochore-associated protein 2
+        1.8    8.6   8.7        1.8    8.6   1.1    2.4  2  Laminin_II       Laminin Domain II
+        2.3    8.3  11.7        2.4    8.2   2.5    2.8  3  DUF1664          Protein of unknown function (DUF1664)
+        2.4    8.3   5.6        6.9    6.8   0.4    2.6  2  Cob_adeno_trans  Cobalamin adenosyltransferase
+        5.5    7.5  14.3       0.62   10.6   3.2    2.9  3  DUF16            Protein of unknown function DUF16
+        5.6    5.5   7.4        1.1    7.7   2.3    1.7  2  FapA             Flagellar Assembly Protein A
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  135.3   6.5   5.1e-43   7.5e-40       3     116 .]     127     238 ..     123     238 .. 0.95
+   2 ?   -1.8   0.1       1.8   2.6e+03      74      94 ..     247     267 ..     241     270 .. 0.66
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.7   2.3   1.4e-05     0.021     296     366 ..     183     256 ..     156     260 .. 0.81
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.2   1.4   1.3e-05     0.019      28      68 ..     175     215 ..     167     231 .. 0.83
+   2 ?    2.5   2.9      0.12   1.7e+02       4      59 ..     210     264 ..     207     289 .. 0.51
+   3 ?   -1.8   0.0       2.6     4e+03      12      22 ..     303     313 ..     275     325 .. 0.55
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3  13.7   0.00011      0.16      23     164 ..     176     321 ..     156     327 .. 0.86
+
+>> TBCC_N  Tubulin-specific chaperone C N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.9   0.7       0.2     3e+02      44      80 ..     183     217 ..     148     222 .. 0.76
+   2 ?   11.5   0.4   0.00021      0.32       8      76 ..     226     295 ..     219     306 .. 0.77
+
+>> XhlA  Haemolysin XhlA
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.0   0.6     0.019        28       4      49 ..     179     224 ..     176     231 .. 0.80
+   2 ?    3.9   0.4     0.042        63      27      47 ..     246     266 ..     233     270 .. 0.79
+   3 ?    3.4   0.0     0.061        90       6      38 ..     280     312 ..     277     314 .. 0.87
+
+>> SKA2  Spindle and kinetochore-associated protein 2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.9   0.7   0.00084       1.3      35      73 ..     176     214 ..     168     226 .. 0.89
+   2 ?    2.6   1.2     0.075   1.1e+02      42      99 ..     244     307 ..     229     318 .. 0.59
+
+>> Laminin_II  Laminin Domain II
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.9   1.2     0.033        49      34      90 ..     168     221 ..     151     231 .. 0.73
+   2 ?    8.6   1.1    0.0012       1.8      12     100 ..     246     316 ..     230     324 .. 0.49
+
+>> DUF1664  Protein of unknown function (DUF1664)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.2   2.5    0.0016       2.4      48     122 ..     144     221 ..     137     226 .. 0.82
+   2 ?    5.2   0.9     0.014        20      50     104 ..     212     268 ..     207     272 .. 0.76
+   3 ?    3.5   1.0     0.048        71      44     110 ..     247     315 ..     243     324 .. 0.62
+
+>> Cob_adeno_trans  Cobalamin adenosyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.2   0.8     0.058        86      89     118 ..     140     169 ..      96     235 .. 0.56
+   2 ?    6.8   0.4    0.0046       6.9      49      96 ..     240     302 ..     222     325 .. 0.61
+
+>> DUF16  Protein of unknown function DUF16
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   3.2   0.00041      0.62      24      99 ..     141     216 ..     133     221 .. 0.85
+   2 ?    2.4   1.9      0.15   2.2e+02      55      97 ..     233     265 ..     208     299 .. 0.43
+   3 ?    1.8   0.7      0.23   3.4e+02      31      77 ..     275     321 ..     257     329 .. 0.73
+
+>> FapA  Flagellar Assembly Protein A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.3   6.5      0.13     2e+02     335     409 ..     191     268 ..     113     270 .. 0.69
+   2 ?    7.7   2.3   0.00075       1.1     318     411 ..     217     311 ..     204     325 .. 0.85
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (331 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1931  (0.107703); expected 358.6 (0.02)
+Passed bias filter:                      725  (0.0404373); expected 358.6 (0.02)
+Passed Vit filter:                        78  (0.00435049); expected 17.9 (0.001)
+Passed Fwd filter:                        20  (0.00111551); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):              12  [number of targets reported over threshold]
+# CPU time: 0.25u 0.11s 00:00:00.36 Elapsed: 00:00:00.18
+# Mc/sec: 5586.53
+//
+Query:       Phy004VACL_55661  [L=447]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    2.3e-39  133.8   6.4    2.3e-39  133.8   6.4    1.6  2  Nsp1_C          Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.021   15.1   1.1      0.021   15.1   1.1    2.6  3  DUF4164         Domain of unknown function (DUF4164)
+       0.03   13.2   2.5      0.043   12.6   2.5    1.2  1  Nup188_C        Nuclear pore protein NUP188 C-terminal domain
+        0.2   11.0  14.4       0.53    9.6  14.4    1.7  1  GAS             Growth-arrest specific micro-tubule binding
+        1.9    8.6   4.8        4.3    7.4   0.3    2.3  2  Cauli_DNA-bind  Caulimovirus DNA-binding protein
+        3.9    7.5  12.9       0.65   10.0   2.9    2.2  2  YscO-like       YscO-like protein
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  133.8   6.4   7.6e-43   2.3e-39       5     116 .]     242     354 ..     238     354 .. 0.93
+   2 ?   -3.4   0.1       2.8   8.5e+03      75      89 ..     364     378 ..     358     385 .. 0.52
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.1   1.1   7.1e-06     0.021      28      68 ..     291     331 ..     283     347 .. 0.83
+   2 ?    1.8   1.8       0.1     3e+02      11      56 ..     326     377 ..     323     387 .. 0.47
+   3 ?   -2.7   0.0       2.5   7.4e+03      12      21 ..     419     428 ..     393     440 .. 0.55
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   2.5   1.5e-05     0.043     297     366 ..     300     372 ..     272     376 .. 0.82
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.6  14.4   0.00018      0.53      23     164 ..     292     437 ..     272     443 .. 0.87
+
+>> Cauli_DNA-bind  Caulimovirus DNA-binding protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.4   0.3    0.0014       4.3       3      41 ..     299     337 ..     297     342 .. 0.88
+   2 ?    2.7   0.6     0.043   1.3e+02       9      68 ..     363     421 ..     356     445 .. 0.54
+
+>> YscO-like  YscO-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   2.9   0.00022      0.65      82     146 ..     265     329 ..     252     331 .. 0.89
+   2 ?    2.8   2.5     0.036   1.1e+02      32     121 ..     352     438 ..     335     443 .. 0.58
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (447 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1479  (0.0824921); expected 358.6 (0.02)
+Passed bias filter:                      561  (0.0312901); expected 358.6 (0.02)
+Passed Vit filter:                        68  (0.00379274); expected 17.9 (0.001)
+Passed Fwd filter:                        16  (0.000892409); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.31u 0.10s 00:00:00.41 Elapsed: 00:00:00.18
+# Mc/sec: 7544.34
+//
+Query:       Phy004V34S_CORBR  [L=458]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    1.4e-40  137.7   6.6    3.7e-40  136.3   6.6    1.6  1  Nsp1_C     Nsp1-like C-terminal region
+     0.0045   17.2   1.2     0.0045   17.2   1.2    2.8  3  DUF4164    Domain of unknown function (DUF4164)
+  ------ inclusion threshold ------
+      0.078   11.8   2.5       0.11   11.3   2.5    1.2  1  Nup188_C   Nuclear pore protein NUP188 C-terminal domain
+       0.47    9.8  13.5        1.6    8.0  13.5    1.8  1  GAS        Growth-arrest specific micro-tubule binding
+       0.89    9.6  10.7       0.29   11.2   1.5    2.2  2  YscO-like  YscO-like protein
+        2.2    8.8   3.8        4.8    7.7   3.8    1.6  1  DUF2779    Domain of unknown function(DUF2779)
+        2.6    8.4   7.2         13    6.1   7.1    2.3  1  Rx_N       Rx N-terminal domain
+        6.6    7.1   8.3         15    6.0   2.1    2.8  2  BLOC1_2    Biogenesis of lysosome-related organelles complex-
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  136.3   6.6   1.7e-43   3.7e-40       3     116 .]     254     365 ..     250     365 .. 0.94
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.2   1.2     2e-06    0.0045      28      68 ..     302     342 ..     294     358 .. 0.83
+   2 ?    1.7   2.1      0.14   3.1e+02      11      56 ..     337     388 ..     334     398 .. 0.44
+   3 ?   -1.1   0.0         1   2.4e+03      10      32 ..     428     450 ..     405     453 .. 0.75
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   2.5     5e-05      0.11     296     366 ..     310     383 ..     284     387 .. 0.82
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.0  13.5   0.00073       1.6      23     164 ..     303     448 ..     283     454 .. 0.85
+
+>> YscO-like  YscO-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   1.5   0.00013      0.29      81     146 ..     275     340 ..     258     342 .. 0.89
+   2 ?    3.2   2.2     0.036        80      33     122 ..     364     450 ..     346     454 .. 0.48
+
+>> DUF2779  Domain of unknown function(DUF2779)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.7   3.8    0.0022       4.8      11     112 ..     259     395 ..     254     427 .. 0.64
+
+>> Rx_N  Rx N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.1   7.1     0.006        13      40      81 ..     358     400 ..     269     450 .. 0.82
+
+>> BLOC1_2  Biogenesis of lysosome-related organelles complex-1 subunit 2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.0   2.1    0.0066        15      32      83 ..     304     352 ..     279     357 .. 0.70
+   2 ?    3.9   0.4      0.03        68      21      88 ..     369     442 ..     354     451 .. 0.72
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (458 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1605  (0.0895198); expected 358.6 (0.02)
+Passed bias filter:                      562  (0.0313459); expected 358.6 (0.02)
+Passed Vit filter:                        79  (0.00440627); expected 17.9 (0.001)
+Passed Fwd filter:                        20  (0.00111551); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               8  [number of targets reported over threshold]
+# CPU time: 0.33u 0.07s 00:00:00.40 Elapsed: 00:00:00.19
+# Mc/sec: 7323.16
+//
+Query:       Phy004Z0OU_MELUD  [L=551]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    3.7e-39  133.1   7.7    3.7e-39  133.1   7.7    1.7  2  Nsp1_C       Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+      0.026   14.8   1.6      0.026   14.8   1.6    2.5  2  DUF4164      Domain of unknown function (DUF4164)
+      0.062   12.1   2.6      0.091   11.6   2.6    1.2  1  Nup188_C     Nuclear pore protein NUP188 C-terminal domain
+       0.14   11.5  15.3       0.26   10.6  15.3    1.4  1  GAS          Growth-arrest specific micro-tubule binding
+        2.4    8.6   8.0       0.58   10.6   0.7    2.4  2  TBCC_N       Tubulin-specific chaperone C N-terminal domain
+        3.6    7.6   9.7        3.4    7.7   1.3    2.3  2  Laminin_II   Laminin Domain II
+        8.1    6.5  12.0        4.2    7.4   2.6    2.7  3  DUF1664      Protein of unknown function (DUF1664)
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  133.1   7.7   1.4e-42   3.7e-39       3     116 .]     347     458 ..     342     458 .. 0.93
+   2 ?   -2.6   0.1       1.9   4.8e+03      73      94 ..     466     487 ..     460     489 .. 0.66
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.8   1.6     1e-05     0.026      28      68 ..     395     435 ..     388     450 .. 0.86
+   2 ?    2.3   1.9     0.079     2e+02      11      59 ..     430     484 ..     425     505 .. 0.53
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   2.6   3.6e-05     0.091     297     366 ..     404     476 ..     381     480 .. 0.82
+
+>> GAS  Growth-arrest specific micro-tubule binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6  15.3    0.0001      0.26      22     164 ..     395     541 ..     376     547 .. 0.86
+
+>> TBCC_N  Tubulin-specific chaperone C N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.6   1.3      0.14   3.6e+02      28      80 ..     384     437 ..     369     441 .. 0.77
+   2 ?   10.6   0.7   0.00023      0.58       8      76 ..     446     515 ..     439     541 .. 0.79
+
+>> Laminin_II  Laminin Domain II
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.3   1.6     0.015        37      32      89 ..     386     440 ..     370     450 .. 0.75
+   2 ?    7.7   1.3    0.0013       3.4      14     100 ..     461     536 ..     449     544 .. 0.51
+
+>> DUF1664  Protein of unknown function (DUF1664)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.4   2.6    0.0016       4.2      49     122 ..     365     441 ..     357     443 .. 0.81
+   2 ?    4.2   1.9     0.016        42      50     104 ..     432     488 ..     427     515 .. 0.80
+   3 ?    2.3   1.0     0.065   1.7e+02      45     110 ..     468     535 ..     464     544 .. 0.61
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (551 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1369  (0.0763567); expected 358.6 (0.02)
+Passed bias filter:                      489  (0.0272742); expected 358.6 (0.02)
+Passed Vit filter:                        78  (0.00435049); expected 17.9 (0.001)
+Passed Fwd filter:                        25  (0.00139439); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 0.35u 0.07s 00:00:00.42 Elapsed: 00:00:00.18
+# Mc/sec: 9299.63
+//
+Query:       Phy004Y35P_HALLE  [L=510]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    3.1e-39  133.4   7.5    3.1e-39  133.4   7.5    1.5  2  Nsp1_C    Nsp1-like C-terminal region
+  ------ inclusion threshold ------
+       0.02   15.1   1.5       0.02   15.1   1.5    2.1  2  DUF4164   Domain of unknown function (DUF4164)
+      0.054   12.3   2.3      0.075   11.9   2.3    1.1  1  Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+        2.4    8.7  10.8       0.49   10.9   4.8    2.1  2  DUF16     Protein of unknown function DUF16
+        4.8    7.2   8.2        3.8    7.6   2.6    2.3  2  DUF1664   Protein of unknown function (DUF1664)
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  133.4   7.5   8.6e-43   3.1e-39       5     116 .]     331     443 ..     327     443 .. 0.93
+   2 ?   -3.6   0.1       2.6   9.4e+03      74      90 ..     452     468 ..     448     474 .. 0.58
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.1   1.5   5.7e-06      0.02      28      68 ..     380     420 ..     373     436 .. 0.86
+   2 ?    0.9   0.7      0.15   5.5e+02       4      47 ..     415     464 ..     412     477 .. 0.45
+
+>> Nup188_C  Nuclear pore protein NUP188 C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   2.3   2.1e-05     0.075     297     366 ..     389     461 ..     366     465 .. 0.82
+
+>> DUF16  Protein of unknown function DUF16
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   4.8   0.00014      0.49      25      99 ..     347     421 ..     340     427 .. 0.85
+   2 ?    1.4   1.4      0.12   4.3e+02      40      89 ..     425     469 ..     412     506 .. 0.51
+
+>> DUF1664  Protein of unknown function (DUF1664)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.6   2.6    0.0011       3.8      49     122 ..     350     426 ..     342     428 .. 0.81
+   2 ?    3.2   0.6     0.024        85      67     104 ..     436     473 ..     414     478 .. 0.73
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (510 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1477  (0.0823805); expected 358.6 (0.02)
+Passed bias filter:                      556  (0.0310112); expected 358.6 (0.02)
+Passed Vit filter:                        81  (0.00451782); expected 17.9 (0.001)
+Passed Fwd filter:                        13  (0.000725082); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.34u 0.07s 00:00:00.41 Elapsed: 00:00:00.18
+# Mc/sec: 8607.64
+//
+Query:       Phy00535AU_PYGAD  [L=423]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    9.8e-40  135.0   6.4    1.4e-39  134.5   6.4    1.2  1  Nsp1_C    Nsp1-like C-terminal region
+     0.0046   17.2   0.6     0.0081   16.4   0.6    1.3  1  DUF4164   Domain of unknown function (DUF4164)
+  ------ inclusion threshold ------
+       0.18   12.3   2.3       0.29   11.7   2.3    1.3  1  DUF16     Protein of unknown function DUF16
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  134.5   6.4   2.4e-43   1.4e-39       3     116 .]     308     419 ..     303     419 .. 0.93
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.4   0.6   1.4e-06    0.0081      28      68 ..     356     396 ..     349     411 .. 0.86
+
+>> DUF16  Protein of unknown function DUF16
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   2.3   4.8e-05      0.29      25      99 ..     323     397 ..     316     412 .. 0.86
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (423 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1209  (0.0674327); expected 358.6 (0.02)
+Passed bias filter:                      523  (0.0291706); expected 358.6 (0.02)
+Passed Vit filter:                        69  (0.00384851); expected 17.9 (0.001)
+Passed Fwd filter:                         7  (0.000390429); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.28u 0.13s 00:00:00.41 Elapsed: 00:00:00.24
+# Mc/sec: 5354.46
+//
+Query:       Phy004Y9VQ_LEPDC  [L=373]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    5.2e-40  135.9   6.2    7.9e-40  135.3   6.2    1.2  1  Nsp1_C    Nsp1-like C-terminal region
+     0.0016   18.7   0.4     0.0027   17.9   0.4    1.3  1  DUF4164   Domain of unknown function (DUF4164)
+  ------ inclusion threshold ------
+       0.19   12.2   2.9       0.31   11.6   2.9    1.3  1  DUF16     Protein of unknown function DUF16
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  135.3   6.2   1.3e-43   7.9e-40       3     116 .]     258     369 ..     254     369 .. 0.94
+
+>> DUF4164  Domain of unknown function (DUF4164)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.9   0.4   4.5e-07    0.0027      28      69 ..     306     347 ..     298     361 .. 0.82
+
+>> DUF16  Protein of unknown function DUF16
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   2.9   5.1e-05      0.31      25     100 ..     273     348 ..     266     364 .. 0.86
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (373 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1185  (0.066094); expected 358.6 (0.02)
+Passed bias filter:                      479  (0.0267165); expected 358.6 (0.02)
+Passed Vit filter:                        63  (0.00351386); expected 17.9 (0.001)
+Passed Fwd filter:                        10  (0.000557756); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.25u 0.10s 00:00:00.35 Elapsed: 00:00:00.18
+# Mc/sec: 6295.39
+//
+Query:       Phy004XRVA_HALAL  [L=301]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    1.8e-13   50.3   0.7    2.6e-13   49.8   0.7    1.2  1  Nsp1_C           Nsp1-like C-terminal region
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.8   0.7   1.5e-17   2.6e-13       5      49 ..     256     301 .]     252     301 .] 0.85
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (301 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                       753  (0.041999); expected 358.6 (0.02)
+Passed bias filter:                      214  (0.011936); expected 358.6 (0.02)
+Passed Vit filter:                        19  (0.00105974); expected 17.9 (0.001)
+Passed Fwd filter:                         7  (0.000390429); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.23u 0.08s 00:00:00.31 Elapsed: 00:00:00.17
+# Mc/sec: 5379.03
+//
+Query:       Phy004Z7RR_MERNU  [L=299]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    8.5e-19   67.5   0.2    1.2e-18   67.0   0.2    1.2  1  Nsp1_C    Nsp1-like C-terminal region
+
+
+Domain annotation for each model:
+>> Nsp1_C  Nsp1-like C-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   67.0   0.2   6.5e-23   1.2e-18       7      58 ..     247     299 .]     240     299 .] 0.85
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (299 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                       688  (0.0383736); expected 358.6 (0.02)
+Passed bias filter:                      255  (0.0142228); expected 358.6 (0.02)
+Passed Vit filter:                        23  (0.00128284); expected 17.9 (0.001)
+Passed Fwd filter:                         5  (0.000278878); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.23u 0.09s 00:00:00.32 Elapsed: 00:00:00.18
+# Mc/sec: 5046.44
+//
+[ok]
