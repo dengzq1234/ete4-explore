@@ -5,18 +5,22 @@ import time
 def browser_driver(url):
     options = webdriver.FirefoxOptions()
     options.add_argument('--headless')
+    options.set_preference("browser.download.folderList", 2)
+    options.set_preference("browser.download.manager.showWhenStarting", False)
+    options.set_preference("browser.download.dir", "./")
+
     browser_driver = webdriver.Firefox(
-            executable_path=r"/home/deng/FireFox/geckodriver",  # 这里必须要是绝对路径
+            executable_path=r"./geckodriver",  # 这里必须要是绝对路径
             # windows是.exe文件 xxx/xxx/geckodriver.exe, xxx/xxx/firefox.exe
             # linux直接是xxx/xxx/geckodriver, xxx/xxx/firefox
-            #firefox_binary=r"/home/deng/FireFox/firefox",
+            firefox_binary=r"/home/deng/ete4_test/ete4-explore/seleniumdriver/firefox",
             options=options)
     try:
         #url = r'https://www.google.com/
         browser_driver.get(url)
         #print ('当前爬取的网页url为:{0}'.format(browser_driver.current_url)) 
         #print(browser_driver.find_element_by_id('div_tree').get_attribute('innerHTML'))
-        #time.sleep(1)
+        time.sleep(1)
         actions = ActionChains(browser_driver)
         actions.send_keys('d')
         actions.perform()

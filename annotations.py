@@ -9,11 +9,11 @@ from ete4.parser.newick import NewickError
 #from ete4.smartview.renderer.layouts import seq_layouts
 import csv 
 
-tree = "/home/deng/Projects/ete4/hackathon/metadata_annotation/trees/phylotree.nw"
-metadata = "/home/deng/Projects/ete4/hackathon/metadata_annotation/emmapper_annotations.tsv"
-msa = "/home/deng/Projects/ete4/hackathon/metadata_annotation/fasta/tree.aln.faa"
-fastafile = "/home/deng/Projects/ete4/hackathon/metadata_annotation/fasta/unaligned_NUP62.fasta"
-layoutjson = "/home/deng/Projects/ete4/hackathon/metadata_annotation/ProteinDomainLayout.json"
+tree = "./trees/phylotree.nw"
+metadata = "./emmapper_annotations.tsv"
+msa = "./fasta/tree.aln.faa"
+fastafile = "./fasta/unaligned_NUP62.fasta"
+layoutjson = "./ProteinDomainLayout.json"
 
 def ete4_parse(newick):
     try:
