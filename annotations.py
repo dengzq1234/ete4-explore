@@ -7,6 +7,7 @@ from ete4 import SeqGroup
 
 from ete4.parser.newick import NewickError
 #from ete4.smartview.renderer.layouts import seq_layouts
+
 import csv 
 
 tree = "/home/deng/Projects/ete4/hackathon/metadata_annotation/trees/phylotree.nw"
@@ -44,7 +45,6 @@ def parse_emapper(metadata):
     for row in read_tsv:
         metatable.append(row)
     tsv_file.close()
-
     return metatable, read_tsv.fieldnames
 
 t = ete4_parse(tree)
@@ -56,8 +56,10 @@ annotations, columns = parse_emapper(metadata)
 # 'Preferred_name', 'GOs', 'EC', 'KEGG_ko', 'KEGG_Pathway', 'KEGG_Module', 'KEGG_Reaction', 'KEGG_rclass', \
 # 'BRITE', 'KEGG_TC', 'CAZy', 'BiGG_Reaction', 'PFAMs']
 for annotation in annotations:
+    gene_name = next(iter(annotation.items()))[1] #gene name must be on first column
+    #print(list(annotation.values())[0])
     try:
-        target_node = t.search_nodes(name=annotation['#query'])[0]
+        target_node = t.search_nodes(name=gene_name)[0]
         for _ in range(1, len(columns)):
             
             if columns[_] == 'seed_ortholog': # only for emapper annotations
@@ -95,10 +97,10 @@ def parse_json(jsonfile):
     return data
 
 PROTEIN_NAME_TO_SEQ = parse_fasta(fastafile)
-PROTEIN_TO_DOMAINS = parse_json(layoutjson)
+#PROTEIN_TO_DOMAINS = parse_json(layoutjson)
 # taxa annotation
 t.annotate_ncbi_taxa('taxid')
-#t.write(outfile="annotated_tree.nw", properties=[], format=1)
+t.write(outfile="annotated_tree.nw", properties=[], format=1)
 
 # add layouts to leaf
 def get_level(node, level=1):
@@ -263,7 +265,15 @@ def get_svg(ete_server_ur, treeid, w=370, h=170):
     return svg.tostring()
 
 from ete4.smartview.renderer.layouts import seq_layouts
-t.explore(tree_name="example", layouts=[
+from multiprocessing import Process
+import time
+from selenium_test import browser_driver
+import requests
+
+#t.draw()
+
+def run(t):
+    t.explore(tree_name="example", layouts=[
         TreeLayout("taxa", ns=get_layout_SeedOrtholog(t), aligned_faces = True),
         #TreeLayout("lca", ns=get_layout_lca_rects(), aligned_faces = True),
         TreeLayout("gname", ns=get_layout_gnames(), aligned_faces = True),
@@ -273,6 +283,33 @@ t.explore(tree_name="example", layouts=[
         #LayoutAlignment()
         ]
         )
+    return
+
+def job2():
+    url = "http://127.0.0.1:5000/static/gui.html?tree=example"
+
+    def end_flask():
+        requests.get('http://localhost:5000/shutdown')
+        return
+
+    browser_driver(url)
+
+    time.sleep(0.5)
+
+    #print("quit")
+    #end_flask()
+    return
+
+p = Process(target=run, args=(t,))
+p.start()
+
+p2 = Process(target=job2)
+p2.start()
+time.sleep(2)
+#p.terminate()
+#p.join()
+
+
 #import os
 # pid = os.fork()
 # if pid == 0:

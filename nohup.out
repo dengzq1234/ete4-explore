@@ -1,0 +1,216 @@
+Current trees in memory: 0
+Tree added to app.trees
+Dumping tree...
+Dump: 0.0011661052703857422
+Added tree example with id 0.
+ * Serving Flask app 'ete4.smartview.gui.server' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+Process Process-2:
+Traceback (most recent call last):
+  File "/home/deng/miniconda3/envs/ete4_official/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/deng/miniconda3/envs/ete4_official/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deng/Projects/ete4/hackathon/metadata_annotation/annotations.py", line 295, in job2
+    browser_driver(url)
+  File "/home/deng/Projects/ete4/hackathon/metadata_annotation/selenium_test.py", line 20, in browser_driver
+    browser_driver.get(url)
+  File "/home/deng/miniconda3/envs/ete4_official/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 437, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/deng/miniconda3/envs/ete4_official/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 425, in execute
+    self.error_handler.check_response(response)
+  File "/home/deng/miniconda3/envs/ete4_official/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Reached error page: about:neterror?e=connectionFailure&u=http%3A//127.0.0.1%3A5000/static/gui.html%3Ftree%3Dexample&c=UTF-8&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20127.0.0.1%3A5000.
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:183:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.jsm:510:5
+checkReadyState@chrome://remote/content/marionette/navigate.js:64:24
+onNavigation@chrome://remote/content/marionette/navigate.js:312:39
+emit@resource://gre/modules/EventEmitter.jsm:160:20
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.jsm:44:25
+
+Current trees in memory: 0
+Tree added to app.trees
+Dumping tree...
+Dump: 0.00045299530029296875
+Added tree example with id 0.
+ * Serving Flask app 'ete4.smartview.gui.server' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/gui.html?tree=example HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/css/gui.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "[33mGET /static/external/bootstrap-4.min.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/css/scrollbar.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/css/offcanvas.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/external/dom-to-image.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/external/sweetalert2.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/js/gui.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/external/tweakpane-3.0.2.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/external/svgtopdf.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/js/events.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/js/download.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/js/active.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/js/menu.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/js/draw.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/external/pdfkit.standalone.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/js/collapse.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/js/zoom.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/js/minimap.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/js/select.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/js/search.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/js/drag.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/js/pixi.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:50:59] "GET /static/js/contextmenu.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/colors.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/icons.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/gui.html?tree=example HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/css/gui.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "[33mGET /static/external/bootstrap-4.min.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/css/scrollbar.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/css/offcanvas.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/A.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/R.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/D.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/C.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/external/dom-to-image.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/N.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/external/sweetalert2.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /trees HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/external/tweakpane-3.0.2.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/gui.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/external/svgtopdf.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/Q.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/G.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/E.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/H.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/I.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/K.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/L.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/P.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/S.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/M.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/W.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/T.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/F.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/Y.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/B.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/X.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/V.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/Z.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/A.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/-.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/D.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/N.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/..png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/active.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/R.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/download.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/external/pdfkit.standalone.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/draw.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/menu.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/events.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/C.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/E.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/Q.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/H.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/G.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/F.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/search.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/zoom.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/select.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/minimap.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/collapse.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/L.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/K.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/M.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/P.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/I.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/W.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/S.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/T.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/V.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /layouts HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/Y.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/B.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/Z.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/X.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "[33mGET /static/images/aa_text/..png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/block.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/pixi.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/drag.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/-.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/contextmenu.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/colors.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/icon.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /trees/0/size HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /trees/0/collapse_size HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /drawers/RectFaces/0 HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/js/icons.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /trees/0/ultrametric HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /trees/0/nodecount HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /layouts/0 HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /trees/0/searches HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /trees/0/all_selections HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /trees/0/all_active HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/A.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/N.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/R.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/D.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/C.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/E.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/G.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/Q.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /trees HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/H.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/I.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/L.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/P.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/K.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/M.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/F.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/S.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/T.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/B.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/W.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/Y.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/V.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/Z.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/..png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/R.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/X.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_notext/-.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/A.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/E.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /trees/0/draw?zx=728.3158572968744&zy=10.92&drawer=Rect HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/N.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /trees/0/draw?zx=728.3158572968744&zy=10.92&drawer=Rect HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/I.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/L.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /trees/0/draw?drawer=RectFaces&min_size=10&zx=4357.136325843198&zy=24.588&za=1&x=-0.031350866666666664&y=-1.3888888888888888&w=0.31350866666666666&h=27.777777777777775&collapsed_ids=%5B%5D&layouts=%5B%22default%3ABranch+length%22%2C%22default%3ABranch+support%22%2C%22default%3ALeaf+name%22%2C%22default%3Ataxa%22%2C%22default%3Agname%22%5D&ultrametric=0 HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/D.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/C.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/F.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/H.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/G.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/M.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/Q.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/S.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/T.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/P.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/W.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/Y.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/K.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/Z.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/X.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2022 15:51:00] "GET /static/images/aa_text/-.png HTTP/1.1" 200 -
+downloaded

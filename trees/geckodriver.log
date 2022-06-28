@@ -1,0 +1,15 @@
+1649670972858	geckodriver	INFO	Listening on 127.0.0.1:48609
+1649670972861	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "48891" "-no-remote" "-profile" "/tmp/rust_mozprofileQE3NvX"
+*** You are running in headless mode.
+1649670973153	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQE3NvX/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48891/devtools/browser/0bcaf24d-cf81-4891-b509-943df224254f
+1649670973948	Marionette	INFO	Listening on port 36947
+1649670973977	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:24698): GLib-GObject-CRITICAL **: 11:56:15.179: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1649670975642	Marionette	INFO	Stopped listening on port 36947
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
