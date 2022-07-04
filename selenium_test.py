@@ -7,13 +7,13 @@ def browser_driver(url):
     options.add_argument('--headless')
     options.set_preference("browser.download.folderList", 2)
     options.set_preference("browser.download.manager.showWhenStarting", False)
-    options.set_preference("browser.download.dir", "/home/deng/Projects/ete4/hackathon/metadata_annotation")
+    options.set_preference("browser.download.dir", "./")
 
     browser_driver = webdriver.Firefox(
-            executable_path=r"/home/deng/FireFox/geckodriver",  # 这里必须要是绝对路径
+            executable_path=r"./geckodriver",  # 这里必须要是绝对路径
             # windows是.exe文件 xxx/xxx/geckodriver.exe, xxx/xxx/firefox.exe
             # linux直接是xxx/xxx/geckodriver, xxx/xxx/firefox
-            #firefox_binary=r"/home/deng/FireFox/firefox",
+            firefox_binary=r"/home/deng/ete4_test/ete4-explore/seleniumdriver/firefox",
             options=options)
     try:
         #url = r'https://www.google.com/
