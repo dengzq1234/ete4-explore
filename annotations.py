@@ -270,44 +270,46 @@ import time
 from selenium_test import browser_driver
 import requests
 
-#t.draw()
+t.draw(tree_name="example", layouts=[
+    TreeLayout("gname", ns=get_layout_gnames(), aligned_faces = True),
+])
 
-def run(t):
-    t.explore(tree_name="example", layouts=[
-        TreeLayout("taxa", ns=get_layout_SeedOrtholog(t), aligned_faces = True),
-        #TreeLayout("lca", ns=get_layout_lca_rects(), aligned_faces = True),
-        TreeLayout("gname", ns=get_layout_gnames(), aligned_faces = True),
-        #TreeLayout("seq", ts=seq_layouts, aligned_faces = True),
-        #TreeLayout("lca", ns=get_layout_lca_rects2(t), aligned_faces = True),
-        #TreeLayout("seq", ns=get_layout_pfam(), aligned_faces = True),
-        #LayoutAlignment()
-        ]
-        )
-    return
+# def run(t):
+#     t.explore(tree_name="example", layouts=[
+#         TreeLayout("taxa", ns=get_layout_SeedOrtholog(t), aligned_faces = True),
+#         #TreeLayout("lca", ns=get_layout_lca_rects(), aligned_faces = True),
+#         TreeLayout("gname", ns=get_layout_gnames(), aligned_faces = True),
+#         #TreeLayout("seq", ts=seq_layouts, aligned_faces = True),
+#         #TreeLayout("lca", ns=get_layout_lca_rects2(t), aligned_faces = True),
+#         #TreeLayout("seq", ns=get_layout_pfam(), aligned_faces = True),
+#         #LayoutAlignment()
+#         ]
+#         )
+#     return
 
-def job2():
-    url = "http://127.0.0.1:5000/static/gui.html?tree=example"
+# def job2():
+#     url = "http://127.0.0.1:5000/static/gui.html?tree=example"
 
-    def end_flask():
-        requests.get('http://localhost:5000/shutdown')
-        return
+#     def end_flask():
+#         requests.get('http://localhost:5000/shutdown')
+#         return
 
-    browser_driver(url)
+#     browser_driver(url)
 
-    time.sleep(0.5)
+#     time.sleep(0.5)
 
-    #print("quit")
-    #end_flask()
-    return
+#     #print("quit")
+#     #end_flask()
+#     return
 
-p = Process(target=run, args=(t,))
-p.start()
+# p = Process(target=run, args=(t,))
+# p.start()
 
-p2 = Process(target=job2)
-p2.start()
-time.sleep(2)
-#p.terminate()
-#p.join()
+# p2 = Process(target=job2)
+# p2.start()
+# time.sleep(3)
+# p.terminate()
+# p.join()
 
 
 #import os
